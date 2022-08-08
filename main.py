@@ -1,4 +1,3 @@
-import discord
 import os
 hidden = os.environ.get('discordtoken')
 from discord.ext import commands
