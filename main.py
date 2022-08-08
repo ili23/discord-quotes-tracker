@@ -1,7 +1,8 @@
 import discord
-from config import token
+import os
+hidden = os.environ.get('discordtoken')
 from discord.ext import commands
-TOKEN = "OTgxNjcwODg2ODkxNDU0NTc0.GM5tv9.T1b5UDmGzqR20KsB6HQIypOG0tTvY5HaTSlPc0"
+TOKEN = hidden
 client = commands.Bot(command_prefix="$")
 
 
